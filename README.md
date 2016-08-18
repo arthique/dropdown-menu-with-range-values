@@ -12,7 +12,7 @@ Dropdown Menu with range values (price).
 ## Image source
 | Dropdown Menu | Dropdown Menu is opened |
 | ------------------------- | ------------------------- |
-![Dropdown Menu](https://github.com/arthique/dropdown-menu-with-range-values/blob/master/src/dmenu.jpg)  |  ![Dropdown Menu is opened](https://github.com/arthique/dropdown-menu-with-range-values/blob/master/src/dmenu-open.png)
+![Dropdown Menu](https://github.com/arthique/dropdown-menu-with-range-values/blob/master/src/dmenu.jpg)  |  ![Dropdown Menu is opened](https://github.com/arthique/dropdown-menu-with-range-values/blob/master/src/dmenu-open.jpg)
 
 ## License
 All code here is in MIT license.
