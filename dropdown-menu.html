@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dropdown Menu</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="menu menu_dropdown">
+			<div class="menu__label" data-action="openmenu" data-id="label" data-placeholder="Цена от-до в рублях">Цена от-до в рублях</div>	
+			<div class="menu__holder" data-event="openmenu">
+				<div class="entry">
+					<div class="column column_left">
+						<input class="field field_from" type="text" id="from" data-id="input" value="" placeholder="от">
+						<ul class="range range-from" data-action="setvalue" data-id="from">
+							<li class="range-item" data-value="1500000">1 500 000</li>
+							<li class="range-item" data-value="2000000">2 000 000</li>
+							<li class="range-item" data-value="2500000">2 500 000</li>
+							<li class="range-item" data-value="3000000">3 000 000</li>
+							<li class="range-item" data-value="3500000">3 500 000</li>
+							<li class="range-item" data-value="4000000">4 000 000</li>
+						</ul>
+					</div><!--
+					--><div class="column column_center"><div class="range-separator">—</div></div><!--
+					--><div class="column column_right">
+						<input class="field field_to" type="text" id="to" data-id="input" value="" placeholder="до">
+						<ul class="range range-to" data-action="setvalue" data-id="to">
+							<li class="range-item" data-value="2500000">2 500 000</li>
+							<li class="range-item" data-value="3000000">3 000 000</li>
+							<li class="range-item" data-value="3500000">3 500 000</li>
+							<li class="range-item" data-value="4000000">4 000 000</li>
+							<li class="range-item" data-value="4500000">4 500 000</li>
+							<li class="range-item" data-value="5000000">5 000 000+</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/jquery-3.1.0.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

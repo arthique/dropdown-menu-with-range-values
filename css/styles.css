@@ -1,0 +1,97 @@
+		.container {
+			margin: 4em 0 0 4em;
+			font: 1em Helvetica,sans-serif;
+		}
+		.menu_dropdown {
+			width: 235px;
+			height: 52px;
+			border: 1px solid #ccc;
+		}
+		.menu_dropdown .menu__label {
+			position: relative;
+			padding: 0 20px;
+			line-height: 52px;
+			color: #b6b6b6;
+			cursor: pointer;
+			font-size: 0.85em;
+		}
+		.menu_dropdown .menu__label::after {
+			display: inline-block;
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 8px;
+			top: 45%;
+			right: 10px;
+			background: url("../images/icon-dmenu-down.png") no-repeat;
+		}
+		.menu_dropdown .menu__label.open::after {
+			background: url("../images/icon-dmenu-up.png") no-repeat;
+		}
+		.menu_dropdown .menu__holder {
+			display: none;
+			position: absolute;
+    		padding: 10px 20px;
+    		margin-left: -1px;
+    		width: 300px;
+    		height: 270px;
+    		border: 1px solid #ccc;
+    		z-index: 9
+    		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			}
+			.menu_dropdown .menu__holder.open {
+				display: block;
+			}
+
+		.entry {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			}
+			.entry .column {
+				display: inline-block;
+			}
+			.entry .column.column_left,
+			.entry .column.column_right {
+				width: 120px;
+			}
+			.entry .column.column_center {
+				width: 20px;
+				height: 100%;
+			}
+		.menu_dropdown .menu__holder .range-separator {
+			text-align: center;
+			color: #c1c1c1;
+			line-height: 32px;
+		}
+		.menu_dropdown .menu__holder .field {
+			width: 100%;
+			padding: 11px 10px;
+			border: 1px solid #c1c1c1;
+			outline: none !important;
+			height: 32px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			font-size: 0.85em;
+			}
+			.menu_dropdown .menu__holder .field:focus {
+				border-color: #8e24aa;
+				box-shadow: 0 0 11px 2px rgba(142,36,170,.35);
+			}
+		.menu_dropdown .menu__holder .range {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			}
+			.menu_dropdown .menu__holder .range .range-item {
+				padding: 10px 10px;
+				font-size: 0.85em;
+				cursor: pointer;
+				}
+				.menu_dropdown .menu__holder .range .range-item:hover {
+					background-color: #F4F4F4;
+				}
